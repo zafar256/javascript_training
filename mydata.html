@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil assumenda ducimus voluptatibus magnam quia
+        saepe facere sapiente! At voluptatibus ratione rem praesentium fuga earum illo minus ipsam provident velit.</p>
+
+
+
+    <script>
+
+        // Arrays or lists
+        let countries = ["Kenya", "Uganda", "Tanzania"];
+
+        console.log(countries[1]);
+        console.log(countries.reverse());
+        console.log(countries[1].length);
+        console.log(countries.sort());
+        console.log(countries.toString());
+        countries.push("Rwanda");
+        console.log(countries);
+        console.log(countries.join("-"));
+        console.log(typeof(countries.join("-")));
+
+
+        let num = [1,2,5,6,9,90,30,24,14,32,56,23,43,23];
+        // let filtered = num.filter(x => x > 40)
+        let filtered = num.filter(x => x%2==0);
+        console.log(filtered);
+
+
+        // json objects or dictioneries
+
+        let person ={"Name":"Zafar", "Age":123, "Country":"Kenya", "Address":"Nairobi"};
+        console.log(person["Name"]);
+        console.log(person.Country);
+
+        // API - makes two application commuicate with each other eg js can send data to python, then python converts it to dictionaries, wen respondng to js it converts it back
+        let person_string = '{"Name":"Zafar", "Age":123, "Country":"Kenya", "Address":"Nairobi"}';
+        let person_json = JSON.parse(person_string);
+        console.log(person_json["Name"]);
+        console.log(person_json.Country);
+
+
+    </script>
+
+</body>
+
+</html>
