@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+
+
+
+    // very old browsers, for loop
+
+    for(let i=0; i< days.length; i++){
+        console.log(days[1])
+    }
+
+
+
+    // not so old browsers, for of loop
+
+    let upperdays=[]
+    for(const d of days){
+        upperdays.push(d.toUpperCase())
+    }
+    console.log(upperdays)
+
+
+
+
+    // Modern, for each loop
+
+    days.forEach(day => {
+        console.log(day)
+    })
+
+
+</script>
+
+
+
+</body>
+</html>

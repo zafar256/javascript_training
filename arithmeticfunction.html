@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myCalculator(x,y,z){
+            let sum = 0;
+            if(z == "+"){ sum = x + y; }
+            else if(z == "-"){ sum = x - y; }
+            else if(z == "*"){ sum = x * y; }
+            else if(z == "/"){ sum = x / y; }
+            else { sum = 0 }
+            return sum;
+        }
+        let value3 = parseInt(prompt("Enter number One: ").trim());
+        let arith = prompt("Enter the arithmetic Operator(+,-,*,/)").trim();
+        let value4 = parseInt(prompt("Enter number Two: ").trim());
+        let res3 = myCalculator(value3,value4,arith);
+        // res is a variable
+        console.log(res3)
+    </script>
+</body>
+</html>
